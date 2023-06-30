@@ -1,5 +1,14 @@
 Ude is a C# port of [Mozilla Universal Charset Detector](http://mxr.mozilla.org/mozilla/source/extensions/universalchardet/src/).
 
+## NEW! Build and publish
+
+```
+dotnet pack src\Library\Ude.csproj
+nuget push -Source PenLink -ApiKey a src\Library\bin\Release\PenLink.Ude.CSharp.1.1.0.nupkg
+```
+
+-----
+
 The article "[A composite approach to language/encoding detection](http://www.mozilla.org/projects/intl/UniversalCharsetDetection.html)" describes the charsets detection algorithms implemented by the library.
 
 Ude can recognize the following charsets:
